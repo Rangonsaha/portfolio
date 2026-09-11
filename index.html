@@ -2,492 +2,342 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Rangon Kumar Shaha - Flutter Software Engineer Portfolio">
-
-    <title>Rongon Kumar Shaha | Flutter Software Engineer</title>
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <title>Rangon Kumar Shaha - Flutter Software Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-
-    <!-- =========================
-         NAVBAR
-    ========================== -->
-
-    <header class="navbar">
-
-        <div class="container nav-container">
-
-            <a href="#" class="logo">
-                RK<span>.</span>
-            </a>
-
-            <nav class="nav-menu">
-
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-
-            </nav>
-
-            <a href="#contact" class="nav-button">
-                Let's Talk
-            </a>
-
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#home">Rangon.</a>
+            </div>
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <a href="#contact" class="btn-cta-nav">Let's Talk</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+    </nav>
 
-    </header>
-
-
-    <!-- =========================
-         HERO
-    ========================== -->
-
-    <main>
-
-        <section id="home" class="hero">
-
-            <div class="container hero-container">
-
-                <div class="hero-content">
-
-                    <p class="hero-small-text">
-                        Hello, I'm
-                    </p>
-
-                    <h1>
-                        Rangon Kumar
-                        <span>Shaha</span>
-                    </h1>
-
-                    <h2>
-                        Flutter Software Engineer
-                    </h2>
-
-                    <p class="hero-description">
-                        I build production-ready mobile applications
-                        using Flutter, Dart, REST APIs and modern
-                        software architecture.
-                    </p>
-
-                    <div class="hero-buttons">
-
-                        <a href="#projects" class="btn btn-primary">
-                            View My Work
-                        </a>
-
-                        <a href="#contact" class="btn btn-secondary">
-                            Contact Me
-                        </a>
-
-                    </div>
-
-                    <div class="hero-socials">
-
-                        <a
-                            href="https://github.com/Rangonsaha"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            GitHub
-                        </a>
-
-                        <a
-                            href="https://www.linkedin.com/in/rangon-kumar-saha-456930145"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            LinkedIn
-                        </a>
-
-                    </div>
-
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>Flutter Software Engineer</span>
                 </div>
-
-
-                <!-- Hero Visual -->
-
-                <div class="hero-visual">
-
-                    <div class="profile-card">
-
-                        <div class="profile-image-wrapper">
-                            <img
-                                src="assets/Rangon.jpeg"
-                                alt="Rongon Kumar Shaha"
-                                class="profile-image"
-                            >
-                        </div>
-
-                        <div class="profile-info">
-                            <p class="profile-label">Flutter Software Engineer</p>
-
-                            <h3>Rangon Kumar Shaha</h3>
-
-                            <p>
-                                Building modern, scalable and production-ready
-                                mobile applications.
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             ABOUT
-        ========================== -->
-
-        <section id="about" class="section">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p>01 — About Me</p>
-
-                    <h2>
-                        Building apps that
-                        <span>solve real problems.</span>
-                    </h2>
-
-                </div>
-
-                <div class="about-content">
-
-                    <p>
-                        I'm a Flutter Software Engineer focused on
-                        building scalable and production-ready mobile
-                        applications.
-                    </p>
-
-                    <p>
-                        I work with Flutter, Dart, REST APIs,
-                        Firebase, state management and modern
-                        software architecture to transform ideas
-                        into reliable applications.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             SKILLS
-        ========================== -->
-
-        <section id="skills" class="section section-alt">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p>02 — Skills</p>
-
-                    <h2>
-                        Technologies I
-                        <span>work with.</span>
-                    </h2>
-
-                </div>
-
-                <div class="skills-grid">
-
-                    <div class="skill-card">
-                        <h3>Flutter</h3>
-                        <p>Mobile Application Development</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Dart</h3>
-                        <p>Modern application development</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>REST API</h3>
-                        <p>Dio, HTTP & API Integration</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Riverpod</h3>
-                        <p>State Management</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>GetX</h3>
-                        <p>State & Dependency Management</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Firebase</h3>
-                        <p>Authentication & Backend Services</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Clean Architecture</h3>
-                        <p>Scalable Application Architecture</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Git</h3>
-                        <p>Version Control & Collaboration</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             EXPERIENCE
-        ========================== -->
-
-        <section id="experience" class="section">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p>03 — Experience</p>
-
-                    <h2>
-                        Where I've
-                        <span>worked.</span>
-                    </h2>
-
-                </div>
-
-                <div class="experience-card">
-
-                    <div>
-
-                        <p class="experience-date">
-                            2025 — Present
-                        </p>
-
-                        <h3>
-                            Flutter Software Engineer
-                        </h3>
-
-                        <p class="company-name">
-                            Intuitive Solutions
-                        </p>
-
-                    </div>
-
-                    <div class="experience-description">
-
-                        <p>
-                            Developing production Flutter applications
-                            including POS, restaurant and delivery
-                            solutions.
-                        </p>
-
-                        <p>
-                            Responsible for UI development, business
-                            logic, REST API integration, state
-                            management and application maintenance.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             PROJECTS
-        ========================== -->
-
-        <section id="projects" class="section section-alt">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p>04 — Projects</p>
-
-                    <h2>
-                        Selected
-                        <span>work.</span>
-                    </h2>
-
-                </div>
-
-                <div class="projects-grid">
-
-                    <article class="project-card">
-
-                        <div class="project-number">
-                            01
-                        </div>
-
-                        <h3>
-                            Restaurant POS
-                        </h3>
-
-                        <p>
-                            Production restaurant POS application
-                            built with Flutter and REST API integration.
-                        </p>
-
-                        <div class="project-tags">
-
-                            <span>Flutter</span>
-                            <span>Dart</span>
-                            <span>REST API</span>
-                            <span>GetX</span>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="project-card">
-
-                        <div class="project-number">
-                            02
-                        </div>
-
-                        <h3>
-                            Driver & Delivery App
-                        </h3>
-
-                        <p>
-                            Mobile application for managing driver and
-                            food delivery workflows.
-                        </p>
-
-                        <div class="project-tags">
-
-                            <span>Flutter</span>
-                            <span>Firebase</span>
-                            <span>API</span>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="project-card">
-
-                        <div class="project-number">
-                            03
-                        </div>
-
-                        <h3>
-                            Restaurant Kiosk
-                        </h3>
-
-                        <p>
-                            Self-service restaurant ordering kiosk
-                            application using modern Flutter architecture.
-                        </p>
-
-                        <div class="project-tags">
-
-                            <span>Flutter</span>
-                            <span>Riverpod</span>
-                            <span>Dio</span>
-                            <span>GoRouter</span>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             CONTACT
-        ========================== -->
-
-        <section id="contact" class="section contact-section">
-
-            <div class="container contact-container">
-
-                <p class="contact-small">
-                    Have a project in mind?
+                <h1 class="hero-title">Building beautiful, scalable mobile experiences.</h1>
+                <p class="hero-description">
+                    I'm Rangon Kumar Shaha, a Flutter Software Engineer focused on building reliable, user-friendly mobile applications and production-ready software solutions.
                 </p>
-
-                <h2>
-                    Let's build something
-                    <span>great together.</span>
-                </h2>
-
-                <a
-                    href="mailto:your-rongonkumar27@gmail.com"
-                    class="btn btn-primary"
-                >
-                    Get In Touch
-                </a>
-
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                </div>
             </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer class="footer">
-
-        <div class="container footer-container">
-
-            <p>
-                © <span id="year">2026</span> Rangon Kumar Shaha.
-                All rights reserved.
-            </p>
-
-            <p>
-                Built with HTML, CSS & JavaScript.
-            </p>
-
+            <div class="hero-image">
+                <div class="image-frame">
+                    <img src="assets/Rangon.jpeg" alt="Rangon Kumar Shaha" class="profile-image">
+                    <div class="image-decoration tech-badge tech-badge-1">Flutter</div>
+                    <div class="image-decoration tech-badge tech-badge-2">Dart</div>
+                    <div class="image-decoration tech-badge tech-badge-3">Firebase</div>
+                    <div class="image-decoration tech-badge tech-badge-4">REST API</div>
+                </div>
+            </div>
         </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">A developer who cares about the details.</h2>
+            </div>
+            <p class="about-description">
+                I specialize in Flutter application development and enjoy turning ideas and business requirements into practical, polished applications. With a focus on clean architecture, maintainable code, and user-centric design, I bring concepts to life with precision and attention to quality.
+            </p>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">1+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Production Apps</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-text">Flutter</div>
+                    <div class="stat-label">Primary Stack</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Curiosity to Learn</div>
+                </div>
+            </div>
+            <div class="about-highlights">
+                <div class="highlight-item">
+                    <span class="highlight-icon">📱</span>
+                    <h3>Production Application Development</h3>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-icon">🔌</span>
+                    <h3>REST API Integration</h3>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-icon">🏗️</span>
+                    <h3>Clean Architecture</h3>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-icon">⚡</span>
+                    <h3>State Management</h3>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-icon">🔥</span>
+                    <h3>Firebase</h3>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-icon">💾</span>
+                    <h3>Local Storage & Business Logic</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Expertise</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Mobile Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Dart</span>
+                        <span class="skill-tag">Android</span>
+                        <span class="skill-tag">Responsive UI</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Architecture & State</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Clean Architecture</span>
+                        <span class="skill-tag">MVVM</span>
+                        <span class="skill-tag">SOLID</span>
+                        <span class="skill-tag">Dependency Injection</span>
+                        <span class="skill-tag">GetX</span>
+                        <span class="skill-tag">Riverpod</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Backend Integration</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">REST API</span>
+                        <span class="skill-tag">Dio</span>
+                        <span class="skill-tag">HTTP</span>
+                        <span class="skill-tag">JSON</span>
+                        <span class="skill-tag">Postman</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Data & Services</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Hive</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">SharedPreferences</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Android Studio</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Flutter Software Engineer</h3>
+                            <span class="company-name">Intuitive Solutions</span>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Developing production Flutter applications with robust architectures</li>
+                            <li>Building reusable and well-documented UI components</li>
+                            <li>Implementing complex business logic and state management</li>
+                            <li>Integrating REST APIs and third-party services</li>
+                            <li>Working with local databases and persistent storage solutions</li>
+                            <li>Implementing and maintaining application architecture patterns</li>
+                            <li>Debugging, optimizing and improving application performance</li>
+                            <li>Collaborating with backend teams and product requirements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Things I've Built</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-visual">
+                        <svg viewBox="0 0 400 300" class="project-mockup">
+                            <!-- POS Dashboard Mockup -->
+                            <rect width="400" height="300" fill="#2563EB" opacity="0.1" rx="12"/>
+                            <rect x="20" y="20" width="360" height="40" fill="#2563EB" rx="4" opacity="0.2"/>
+                            <rect x="20" y="70" width="170" height="100" fill="#0F766E" rx="8" opacity="0.15"/>
+                            <rect x="20" y="180" width="170" height="100" fill="#F97316" rx="8" opacity="0.1"/>
+                            <rect x="210" y="70" width="170" height="210" fill="#2563EB" rx="8" opacity="0.12"/>
+                            <circle cx="350" cy="260" r="8" fill="#F97316" opacity="0.3"/>
+                            <text x="200" y="290" text-anchor="middle" font-size="14" fill="#172033" opacity="0.5">Mobile POS Interface</text>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Intuitive EPOS</h3>
+                        <p class="project-category">Production Flutter Application</p>
+                        <p class="project-description">
+                            A production POS application focused on restaurant operations, order management, business workflows and API-driven functionality.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge-small">Flutter</span>
+                            <span class="tech-badge-small">Dart</span>
+                            <span class="tech-badge-small">GetX</span>
+                            <span class="tech-badge-small">REST API</span>
+                            <span class="tech-badge-small">Hive</span>
+                            <span class="tech-badge-small">SQLite</span>
+                        </div>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-visual">
+                        <svg viewBox="0 0 400 300" class="project-mockup">
+                            <!-- Restaurant Kiosk Mockup -->
+                            <rect width="400" height="300" fill="#0F766E" opacity="0.1" rx="12"/>
+                            <rect x="20" y="20" width="360" height="50" fill="#0F766E" rx="4" opacity="0.2"/>
+                            <grid x="40" y="80" patternUnits="userSpaceOnUse" width="60" height="60">
+                                <rect width="60" height="60" fill="none" stroke="#2563EB" stroke-width="1" opacity="0.3"/>
+                            </grid>
+                            <rect x="40" y="80" width="320" height="180" fill="url(#grid)" rx="4"/>
+                            <rect x="80" y="100" width="50" height="50" fill="#F97316" opacity="0.2" rx="4"/>
+                            <rect x="150" y="100" width="50" height="50" fill="#2563EB" opacity="0.2" rx="4"/>
+                            <rect x="220" y="100" width="50" height="50" fill="#0F766E" opacity="0.2" rx="4"/>
+                            <text x="200" y="290" text-anchor="middle" font-size="14" fill="#172033" opacity="0.5">Menu Ordering Interface</text>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Restaurant Order Kiosk</h3>
+                        <p class="project-category">Flutter / Kiosk Application</p>
+                        <p class="project-description">
+                            A restaurant self-ordering kiosk application designed around menu browsing, dish selection, order workflows and third-party API integration.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge-small">Flutter</span>
+                            <span class="tech-badge-small">Dart</span>
+                            <span class="tech-badge-small">Riverpod</span>
+                            <span class="tech-badge-small">Dio</span>
+                            <span class="tech-badge-small">REST API</span>
+                            <span class="tech-badge-small">Freezed</span>
+                        </div>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="philosophy">
+        <div class="container">
+            <div class="philosophy-content">
+                <h2 class="philosophy-title">
+                    I don't just write code.<br>
+                    I build software people can actually use.
+                </h2>
+                <p class="philosophy-text">
+                    I believe that great software is built on the foundation of clean code, thoughtful design, and continuous learning. Every project is an opportunity to solve real problems, improve user experiences, and push my skills as an engineer. I'm committed to writing maintainable code, understanding business requirements, and delivering solutions that make an impact.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="contact-title">Have a project in mind?<br>Let's build something useful.</h2>
+            <div class="contact-cta">
+                <a href="https://github.com/Rangonsaha" target="_blank" class="btn btn-contact btn-github">
+                    <span class="social-icon">GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/rangon-kumar-saha-456930145" target="_blank" class="btn btn-contact btn-linkedin">
+                    <span class="social-icon">LinkedIn</span>
+                </a>
+                <a href="mailto:contact@example.com" class="btn btn-contact btn-email">
+                    <span class="social-icon">Email Me</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>© 2026 Rangon Kumar Shaha</p>
+                    <p>Flutter Software Engineer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/Rangonsaha" target="_blank" title="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rangon-kumar-saha-456930145" target="_blank" title="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <p class="footer-credit">Crafted with attention to detail</p>
+        </div>
     </footer>
 
-
-    <!-- JavaScript -->
-
-    <script src="js/main.js"></script>
-
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

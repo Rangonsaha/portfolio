@@ -3,20 +3,43 @@
 ========================================= */
 
 :root {
-    --bg: #08090c;
-    --bg-soft: #101218;
-    --card: rgba(255, 255, 255, 0.045);
-    --card-border: rgba(255, 255, 255, 0.09);
-
-    --text: #f5f7fa;
-    --text-soft: #a6abb5;
-    --text-muted: #727784;
-
-    --accent: #7c5cff;
-    --accent-light: #9b83ff;
+    /* Light Theme - Premium Software Engineer Portfolio */
+    
+    /* Backgrounds */
+    --bg: #f9f7f4;
+    --bg-soft: #ffffff;
+    
+    /* Overlay/Card styling */
+    --card: rgba(255, 255, 255, 0.95);
+    --card-border: rgba(1, 41, 112, 0.08);
+    
+    /* Text Colors */
+    --text: #1a1a1a;
+    --text-soft: #4a4a4a;
+    --text-muted: #8a8a8a;
+    
+    /* Primary Brand Color - Royal Blue */
+    --accent: #012970;
+    --accent-light: #1a4ba8;
+    --accent-soft: #e8f0ff;
+    
+    /* Secondary Accent - Coral/Warm Orange */
+    --coral: #f55e3e;
+    --coral-light: #ff7a56;
+    --coral-soft: #fff4f0;
+    
+    /* Tertiary Accent - Soft Mint (use sparingly) */
+    --mint: #2dd4bf;
+    --mint-light: #5edcc9;
+    --mint-soft: #f0fffe;
+    
+    /* Utility Colors */
+    --navy: #0f2847;
+    --light-gray: #f5f3f0;
+    --border: #e8e5e2;
+    --border-light: rgba(1, 41, 112, 0.06);
 
     --max-width: 1180px;
-
     --radius: 18px;
     --transition: 0.3s ease;
 }
@@ -37,7 +60,7 @@ html {
 }
 
 body {
-    background: var(--bg);
+    background: linear-gradient(135deg, #f9f7f4 0%, #faf8f5 100%);
     color: var(--text);
 
     font-family: "Inter", sans-serif;
@@ -81,7 +104,7 @@ a {
 }
 
 .section-heading p {
-    color: var(--accent-light);
+    color: var(--coral);
 
     font-size: 13px;
     font-weight: 700;
@@ -119,12 +142,12 @@ a {
 
     z-index: 1000;
 
-    background: rgba(8, 9, 12, 0.7);
+    background: rgba(255, 255, 255, 0.92);
 
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid var(--border-light);
 }
 
 .nav-container {
@@ -143,7 +166,7 @@ a {
 }
 
 .logo span {
-    color: var(--accent);
+    color: var(--coral);
 }
 
 .nav-menu {
@@ -162,7 +185,7 @@ a {
 }
 
 .nav-menu a:hover {
-    color: var(--text);
+    color: var(--accent);
 }
 
 .nav-button {
@@ -183,6 +206,82 @@ a {
     color: var(--bg);
 
     transform: translateY(-2px);
+}
+
+.menu-toggle {
+    display: none;
+
+    flex-direction: column;
+    gap: 5px;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+    padding: 8px;
+
+    z-index: 1001;
+}
+
+.menu-toggle span {
+    width: 24px;
+    height: 2.5px;
+
+    background: var(--text);
+
+    border-radius: 2px;
+
+    transition: var(--transition);
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(11px, 11px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(9px, -8px);
+}
+
+.nav-menu.mobile-open {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+
+    top: 78px;
+    left: 0;
+
+    width: 100%;
+
+    background: rgba(10, 14, 26, 0.95);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border-bottom: 1px solid rgba(123, 92, 255, 0.1);
+
+    padding: 30px 0;
+
+    gap: 0;
+
+    border-radius: 0;
+}
+
+.nav-menu.mobile-open a {
+    padding: 12px 40px;
+
+    display: block;
+
+    transition: background-color var(--transition);
+}
+
+.nav-menu.mobile-open a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
 }
 
 
@@ -216,9 +315,9 @@ a {
     top: 5%;
     right: -180px;
 
-    background: var(--accent);
+    background: linear-gradient(135deg, #7c5cff, #5b8def);
 
-    opacity: 0.12;
+    opacity: 0.15;
 
     filter: blur(130px);
 
@@ -261,8 +360,8 @@ a {
 
     background: linear-gradient(
         90deg,
-        #ffffff,
-        #8270ff
+        var(--accent),
+        var(--accent-light)
     );
 
     -webkit-background-clip: text;
@@ -360,7 +459,7 @@ a {
 }
 
 .hero-socials a:hover {
-    color: var(--text);
+    color: var(--accent);
 }
 
 
@@ -378,16 +477,15 @@ a {
     width: 100%;
     max-width: 470px;
 
-    background: rgba(255, 255, 255, 0.035);
+    background: rgba(255, 255, 255, 0.95);
 
-    border: 1px solid var(--card-border);
+    border: 1px solid rgba(1, 41, 112, 0.12);
 
     border-radius: 22px;
 
     overflow: hidden;
 
-    box-shadow:
-        0 30px 100px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 20px 60px rgba(1, 41, 112, 0.08);
 
     transform: rotate(2deg);
 
@@ -397,7 +495,9 @@ a {
 .hero-card:hover {
     transform: rotate(0deg) translateY(-8px);
 
-    border-color: rgba(124, 92, 255, 0.35);
+    border-color: rgba(1, 41, 112, 0.25);
+    
+    box-shadow: 0 30px 80px rgba(1, 41, 112, 0.15);
 }
 
 .code-header {
@@ -410,7 +510,7 @@ a {
 
     padding: 0 18px;
 
-    border-bottom: 1px solid var(--card-border);
+    border-bottom: 1px solid rgba(1, 41, 112, 0.1);
 }
 
 .code-header span {
@@ -419,7 +519,7 @@ a {
 
     border-radius: 50%;
 
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(1, 41, 112, 0.15);
 }
 
 .code-content {
@@ -441,19 +541,19 @@ a {
 }
 
 .code-keyword {
-    color: #a58cff;
+    color: var(--accent);
 }
 
 .code-symbol {
-    color: #888;
+    color: var(--text-muted);
 }
 
 .code-value {
-    color: #7dd3fc;
+    color: #059669;
 }
 
 .code-number {
-    color: #86efac;
+    color: var(--coral);
 }
 
 
@@ -500,21 +600,24 @@ a {
 
     justify-content: flex-end;
 
-    background: var(--card);
+    background: #ffffff;
 
-    border: 1px solid var(--card-border);
+    border: 1px solid rgba(1, 41, 112, 0.1);
 
     border-radius: var(--radius);
 
     transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(1, 41, 112, 0.05);
 }
 
 .skill-card:hover {
     transform: translateY(-6px);
 
-    border-color: rgba(124, 92, 255, 0.4);
+    border-color: rgba(1, 41, 112, 0.25);
 
-    background: rgba(124, 92, 255, 0.06);
+    background: #ffffff;
+    
+    box-shadow: 0 16px 40px rgba(1, 41, 112, 0.12);
 }
 
 .skill-card h3 {
@@ -543,15 +646,16 @@ a {
 
     padding: 40px;
 
-    background: var(--card);
+    background: #ffffff;
 
-    border: 1px solid var(--card-border);
+    border: 1px solid rgba(1, 41, 112, 0.1);
 
     border-radius: var(--radius);
+    box-shadow: 0 4px 15px rgba(1, 41, 112, 0.05);
 }
 
 .experience-date {
-    color: var(--accent-light);
+    color: var(--coral);
 
     font-size: 13px;
     font-weight: 600;
@@ -602,26 +706,26 @@ a {
     display: flex;
     flex-direction: column;
 
-    background: var(--card);
+    background: #ffffff;
 
-    border: 1px solid var(--card-border);
+    border: 1px solid rgba(1, 41, 112, 0.1);
 
     border-radius: var(--radius);
 
     transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(1, 41, 112, 0.05);
 }
 
 .project-card:hover {
     transform: translateY(-8px);
 
-    border-color: rgba(124, 92, 255, 0.4);
+    border-color: rgba(1, 41, 112, 0.25);
 
-    box-shadow:
-        0 25px 70px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 60px rgba(1, 41, 112, 0.15);
 }
 
 .project-number {
-    color: var(--accent-light);
+    color: var(--coral);
 
     font-family: monospace;
 
@@ -655,9 +759,9 @@ a {
 .project-tags span {
     padding: 6px 10px;
 
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(1, 41, 112, 0.05);
 
-    border: 1px solid var(--card-border);
+    border: 1px solid rgba(1, 41, 112, 0.15);
 
     border-radius: 999px;
 
@@ -685,7 +789,7 @@ a {
 }
 
 .contact-small {
-    color: var(--accent-light);
+    color: var(--coral);
 
     font-size: 14px;
     font-weight: 600;
@@ -703,13 +807,9 @@ a {
     letter-spacing: -3px;
 
     margin-bottom: 35px;
-}
-
-.contact-section h2 span {
-    display: block;
-
-    color: var(--text-muted);
-}
+    
+    color: var(--accent);
+}\n\n.contact-section h2 span {\n    display: block;\n\n    color: var(--coral);\n}
 
 
 /* =========================================
@@ -719,7 +819,9 @@ a {
 .footer {
     padding: 30px 0;
 
-    border-top: 1px solid var(--card-border);
+    border-top: 1px solid rgba(1, 41, 112, 0.08);
+    
+    background: linear-gradient(135deg, rgba(1, 41, 112, 0.02) 0%, rgba(45, 212, 191, 0.02) 100%);
 }
 
 .footer-container {
@@ -739,6 +841,10 @@ a {
 ========================================= */
 
 @media (max-width: 900px) {
+
+    .menu-toggle {
+        display: flex;
+    }
 
     .nav-menu {
         display: none;
@@ -851,10 +957,9 @@ a {
 ========================================= */
 
 .navbar-scrolled {
-    background: rgba(8, 9, 12, 0.92);
+    background: rgba(255, 255, 255, 0.95);
 
-    box-shadow:
-        0 10px 40px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 25px rgba(1, 41, 112, 0.08);
 }
 
 
@@ -919,16 +1024,16 @@ a {
 
     padding: 18px;
 
-    background: rgba(255, 255, 255, 0.045);
-
-    border: 1px solid var(--card-border);
+    background: rgba(255, 255, 255, 0.95);
+    
+    border: 1px solid rgba(1, 41, 112, 0.12);
 
     border-radius: 28px;
 
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 
-    box-shadow:
-        0 30px 100px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 20px 60px rgba(1, 41, 112, 0.1);
 
     transform: rotate(2deg);
 
@@ -938,7 +1043,9 @@ a {
 .profile-card:hover {
     transform: rotate(0deg) translateY(-8px);
 
-    border-color: rgba(124, 92, 255, 0.4);
+    border-color: rgba(1, 41, 112, 0.25);
+    
+    box-shadow: 0 30px 80px rgba(1, 41, 112, 0.15);
 }
 
 
@@ -953,7 +1060,7 @@ a {
 
     border-radius: 20px;
 
-    background: #15161c;
+    background: #f5f3f0;
 }
 
 .profile-image {
@@ -981,7 +1088,7 @@ a {
 }
 
 .profile-label {
-    color: var(--accent-light);
+    color: var(--coral);
 
     font-size: 12px;
     font-weight: 700;
@@ -1005,4 +1112,134 @@ a {
     font-size: 13px;
 
     line-height: 1.7;
+}
+
+
+/* =========================================
+   PREMIUM ENHANCEMENTS
+========================================= */
+
+/* Enhanced card styling with gradient borders */
+.skill-card,
+.project-card,
+.experience-card {
+    position: relative;
+    
+    background: #ffffff;
+}
+
+.skill-card::before,
+.project-card::before {
+    content: "";
+    
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    background: linear-gradient(135deg, rgba(1, 41, 112, 0.04), rgba(45, 212, 191, 0.02));
+    
+    border-radius: var(--radius);
+    
+    pointer-events: none;
+    
+    opacity: 0;
+    
+    transition: opacity 0.3s ease;
+    
+    z-index: 1;
+}
+
+.skill-card:hover::before,
+.project-card:hover::before {
+    opacity: 1;
+}
+
+/* Hero card bottom accent line */
+.hero-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent) 0%, var(--coral) 100%);
+    border-radius: 0 0 22px 22px;
+}
+
+/* Premium button styling */
+.btn-primary {
+    background: var(--accent);
+    color: #ffffff;
+    border: none;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    background: var(--accent-light);
+    box-shadow: 0 12px 30px rgba(1, 41, 112, 0.2);
+}
+
+/* Enhanced footer styling */
+.footer {
+    padding: 30px 0;
+
+    border-top: 1px solid rgba(1, 41, 112, 0.08);
+    
+    background: linear-gradient(135deg, rgba(1, 41, 112, 0.02) 0%, rgba(45, 212, 191, 0.02) 100%);
+}
+
+
+/* =========================================
+   LIGHT THEME POLISH
+========================================= */
+
+/* Enhanced hero section text contrast */
+.hero h2 {
+    color: var(--accent);
+}
+
+/* Smooth hover transitions for links */
+.hero-socials a {
+    color: var(--text-muted);
+}
+
+/* Contact button premium styling */
+.contact-section .btn-primary {
+    background: var(--accent);
+    color: white;
+    font-weight: 700;
+}
+
+.contact-section .btn-primary:hover {
+    background: var(--accent-light);
+    box-shadow: 0 15px 40px rgba(1, 41, 112, 0.2);
+}
+
+/* Section alt background refinement */
+.section-alt {
+    background: linear-gradient(135deg, #fafaf9 0%, #faf8f5 100%);
+}
+
+/* Improved code block styling for light theme */
+.hero-card {
+    position: relative;
+}
+
+.code-content {
+    background: linear-gradient(135deg, rgba(1, 41, 112, 0.02) 0%, rgba(45, 212, 191, 0.01) 100%);
+}
+
+/* Experience card accent */
+.experience-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, var(--accent) 0%, var(--coral) 100%);
+    border-radius: 18px 0 0 18px;
 }

@@ -1,4 +1,28 @@
 /* =========================================
+   MOBILE MENU TOGGLE
+========================================= */
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-menu");
+const navLinks = document.querySelectorAll(".nav-menu a");
+
+if (menuToggle) {
+    menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        navMenu.classList.toggle("mobile-open");
+    });
+}
+
+// Close mobile menu when a link is clicked
+navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        menuToggle.classList.remove("active");
+        navMenu.classList.remove("mobile-open");
+    });
+});
+
+
+/* =========================================
    SCROLL REVEAL
 ========================================= */
 
@@ -62,7 +86,6 @@ window.addEventListener("scroll", () => {
 ========================================= */
 
 const sections = document.querySelectorAll("section[id]");
-const navLinks = document.querySelectorAll(".nav-menu a");
 
 window.addEventListener("scroll", () => {
 
