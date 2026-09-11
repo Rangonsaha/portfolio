@@ -132,13 +132,12 @@ skillCards.forEach((card, index) => {
    CURRENT YEAR
 ========================================= */
 
-const footerText = document.querySelector(".footer-container p");
+const yearElement = document.getElementById("year");
 
-if (footerText) {
+if (yearElement) {
 
     const currentYear = new Date().getFullYear();
 
-    footerText.innerHTML =
-        `© ${currentYear} Rongon Kumar Shaha. All rights reserved.`;
+    yearElement.textContent = currentYear;
 
 }
